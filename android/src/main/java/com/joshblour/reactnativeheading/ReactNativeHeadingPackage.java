@@ -15,16 +15,10 @@ import java.util.List;
 
 public class ReactNativeHeadingPackage implements ReactPackage {
 
-    private Activity mActivity;
-
-    public ReactNativeHeadingPackage(Activity activityContext) {
-        mActivity = activityContext;
-    }
-
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
-        modules.add(new ReactNativeHeadingModule(reactContext, mActivity));
+        modules.add(new ReactNativeHeadingModule(reactContext));
         return modules;    }
 
     @Override

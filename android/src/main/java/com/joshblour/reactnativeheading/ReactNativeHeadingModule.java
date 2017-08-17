@@ -42,9 +42,9 @@ public class ReactNativeHeadingModule extends ReactContextBaseJavaModule impleme
     private float[] orientation = new float[3];
     private float[] rMat = new float[9];
 
-    public ReactNativeHeadingModule(ReactApplicationContext reactContext, Activity activity) {
+    public ReactNativeHeadingModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        mActivity = activity;
+        mActivity = this.getCurrentActivity();
     }
 
     @Override
