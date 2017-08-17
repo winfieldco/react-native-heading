@@ -1,6 +1,6 @@
 {
   "name": "react-native-heading",
-  "version": "0.0.1-post5",
+  "version": "0.0.1-post6",
   "repository": {
     "type": "git",
     "url": "https://github.com/joshblour/react-native-heading.git"
@@ -11,7 +11,7 @@
   "author": "Yonah Forst <yonaforst@hotmail.com>",
   "rnpm": {
     "android": {
-      "packageInstance": "new ReactNativeHeadingPackage(this)"
+      "packageInstance": "new ReactNativeHeadingPackage()"
     }
   }  
 }
