@@ -73,7 +73,9 @@ public class ReactNativeHeadingModule extends ReactContextBaseJavaModule impleme
 
     @ReactMethod
     public void stop() {
-        mSensorManager.unregisterListener(this);
+        if (mSensorManager != null) {
+            mSensorManager.unregisterListener(this);
+        }
     }
 
     @Override
