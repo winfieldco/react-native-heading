@@ -30,6 +30,6 @@ repositories {
 }
 
 dependencies {
-    compile project(':ReactAndroid')
+    compile 'com.facebook.react:react-native:+'
     compile "com.joshblour.discovery:discovery:0.0.3"
 }
